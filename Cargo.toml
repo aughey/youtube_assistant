@@ -1,0 +1,19 @@
+[package]
+name = "youtube_assistant"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+async-openai = { version = "0.42.1", features = ["chat-completion"] }
+clap = { version = "4.5.48", features = ["derive", "env"] }
+google-youtube3 = "7.0.0"
+mime = "0.3.17"
+notify = "9.0.0-rc.5"
+reqwest = { version = "0.13.5", features = ["json", "multipart", "rustls", "stream"], default-features = false }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tokio = { version = "1.47.1", features = ["full"] }
+tracing = "0.1.44"
+tracing-error = "0.2.1"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "fmt"] }

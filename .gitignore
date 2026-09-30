@@ -1,0 +1,3 @@
+/target
+.youtube_token_cache.json
+client_secret*.json
